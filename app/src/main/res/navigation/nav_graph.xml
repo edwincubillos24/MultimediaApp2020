@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/listaMultimediaFragment">
+
+    <fragment
+        android:id="@+id/listaMultimediaFragment"
+        android:name="com.edwinacubillos.multimediaapp.ListaMultimediaFragment"
+        android:label="fragment_lista_multimedia"
+        tools:layout="@layout/fragment_lista_multimedia" >
+        <action
+            android:id="@+id/action_listaMultimediaFragment_to_reproductorVideoFragment"
+            app:destination="@id/reproductorVideoFragment" />
+        <action
+            android:id="@+id/action_listaMultimediaFragment_to_reproductorAudioFragment"
+            app:destination="@id/reproductorAudioFragment" />
+        <action
+            android:id="@+id/action_listaMultimediaFragment_to_tomarFotosFragment"
+            app:destination="@id/tomarFotosFragment" />
+        <action
+            android:id="@+id/action_listaMultimediaFragment_to_grabarVideoFragment"
+            app:destination="@id/grabarVideoFragment" />
+        <action
+            android:id="@+id/action_listaMultimediaFragment_to_grabarAudioFragment"
+            app:destination="@id/grabarAudioFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/reproductorVideoFragment"
+        android:name="com.edwinacubillos.multimediaapp.ReproductorVideoFragment"
+        android:label="fragment_reproductor_video"
+        tools:layout="@layout/fragment_reproductor_video" />
+    <fragment
+        android:id="@+id/reproductorAudioFragment"
+        android:name="com.edwinacubillos.multimediaapp.ReproductorAudioFragment"
+        android:label="fragment_reproductor_audio"
+        tools:layout="@layout/fragment_reproductor_audio" />
+    <fragment
+        android:id="@+id/tomarFotosFragment"
+        android:name="com.edwinacubillos.multimediaapp.TomarFotosFragment"
+        android:label="fragment_tomar_fotos"
+        tools:layout="@layout/fragment_tomar_fotos" />
+    <fragment
+        android:id="@+id/grabarVideoFragment"
+        android:name="com.edwinacubillos.multimediaapp.GrabarVideoFragment"
+        android:label="fragment_grabar_video"
+        tools:layout="@layout/fragment_grabar_video" />
+    <fragment
+        android:id="@+id/grabarAudioFragment"
+        android:name="com.edwinacubillos.multimediaapp.GrabarAudioFragment"
+        android:label="fragment_grabar_audio"
+        tools:layout="@layout/fragment_grabar_audio" />
+</navigation>

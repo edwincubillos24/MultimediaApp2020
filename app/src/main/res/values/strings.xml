@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">MultimediaApp</string>
+    <string name="tomar_foto">Tomar Foto</string>
+    <string name="reproductor_video">Reproductor Video</string>
+    <string name="grabadora_audio">Grabadora de Audio</string>
+    <string name="grabar">Grabar</string>
+    <string name="stop">Stop</string>
+    <string name="play">Play</string>
+    <string name="grabador_video">Grabador de Video</string>
+    <string name="reproductor_audio">Reproductor Audio</string>
+    <string name="pause">Pause</string>
+</resources>
