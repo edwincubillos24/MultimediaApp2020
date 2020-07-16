@@ -25,7 +25,7 @@ class ReproductorVideoFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        val video : Uri = Uri.parse("https://www.ebookfrenzy.com/android_book/movie.mp4")
+        val video : Uri = Uri.parse("https://www.facebook.com/NetflixColombia/videos/1583228875148867/")
         vv_video.setVideoURI(video)
         vv_video.setMediaController(MediaController(activity))
         vv_video.start()
